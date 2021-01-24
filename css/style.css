@@ -1,10 +1,3 @@
-/*
-@font-face {
-    font-family: 'Kumbh Sans';
-    src: url('https://fonts.google.com/specimen/Kumbh+Sans');
-}
-*/
-
 @font-face {
     font-family: 'Kumbh Sans';
     src: url('../fonts/KumbhSans-Regular.ttf');
@@ -24,45 +17,99 @@
 
 body {
     font-family: 'Kumbh Sans', sans-serif; 
-}
-
-#photo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 98px;
-    height:98px;
-    background:url("../images/image-victor.jpg");
-    border-radius: 50%;
+    background-color: #19a1ad; 
+    background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+    background-position-x: 0, 100%;
+    background-position-y: 500%, -500%;
+    background-repeat: no-repeat;
+    padding:10% 40%;
 }
 
 .card {
     display:block;
     font-size: 18px; 
-    line-break: auto;
-    margin-left: auto;
-    margin-right: auto; 
     text-align: center !important;
-    width:50%;
-    height: 40%;
-    margin-top: 30%;
-    margin-bottom: 30%;
+    border-radius: 20px;
+    background-color: white;
+    margin-top:20%;
+}
+
+.bg-card-back {
+    background-image: url("../images/bg-pattern-card.svg");
+    width: 100%;
+    height: 150px;
+    padding: 0;
+    position: relative;
+    border-radius: 20px 20px 0 0;
+}
+
+.info {
+    padding: 10% 0;
+}
+
+.age {
+    color: #909090
+}
+
+.location {
+    font: 10 .9rem "Kumbh sans";
+}
+
+.photo {
+    display: block;
+    background-image: url("../images/image-victor.jpg");
+    margin-left: auto;
+    margin-right: auto;
+    width: 98px;
+    height:98px;
+    border: 5px solid white;
+    border-radius: 50%;
+    position: absolute;
+    top: 60%;
+    left: 0;
+    right: 0;
+}
+
+.line {
+    border: .5px #dedede solid;
+    border-bottom: none;
+}
+
+.table, .row .cell {
+    font: 10 .7rem "Kumbh Sans";
+    text-align: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.table {
+    display: table;
+    width: 100%;
+    height: 100%;
+    padding: 10px 0 0 0;
 }
 
 .row {
     display: table-row;
+    width: 100%;
 }
 
 .cell {
     display: table-cell;
-    border: none;
-    padding-left: 10px;
-    padding-right: 10px;
+    vertical-align: middle;
+}
+
+.cell p {
+    font: 10 1rem "Kumbh Sans";
 }
 
 .attribution { 
     font-size: 11px; 
     text-align: center; 
+    position: absolute;
+    bottom: 1%;
+    right: 20%;
+    left: 20%;
 }
 
 .attribution a { 
