@@ -1,0 +1,70 @@
+/*
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('https://fonts.google.com/specimen/Kumbh+Sans');
+}
+*/
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Light.ttf');
+    font-weight: lighter;
+}
+
+@font-face {
+    font-family: 'Kumbh Sans';
+    src: url('../fonts/KumbhSans-Bold.ttf');
+    font-weight: bold;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif; 
+}
+
+#photo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 98px;
+    height:98px;
+    background:url("../images/image-victor.jpg");
+    border-radius: 50%;
+}
+
+.card {
+    display:block;
+    font-size: 18px; 
+    line-break: auto;
+    margin-left: auto;
+    margin-right: auto; 
+    text-align: center !important;
+    width:50%;
+    height: 40%;
+    margin-top: 30%;
+    margin-bottom: 30%;
+}
+
+.row {
+    display: table-row;
+}
+
+.cell {
+    display: table-cell;
+    border: none;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
